@@ -9,7 +9,6 @@ export default function TodoItem({ item, token }) {
   const [edited, setEdited] = useState(false);
 
   const handleUpdate = () => {
-    
     axios({
       method: "put",
       url: `https://www.pre-onboarding-selection-task.shop/todos/${item?.id}`,
